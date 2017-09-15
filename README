@@ -1,0 +1,32 @@
+The present repository serves to maintain a copy of the used scripts in my thesis.
+"Computational optimization of bioadsorvents for the removal of pharmaceuticals from water".
+Their usage is free and encouraged, but beware: I had zero to no experience creating them.
+With this being said, they are probably very archaiac and non-optimized. Use at your own risk.
+
+>> amc.py
+Multi Conformational Analysis tool, as described in Section 2, performs an heating/quenching cycle in order to gather the [int]
+conformations with lowest energies. Uses GROMACS software.
+
+>> martin.py
+Draws activated carbon residue from scratch, using input data from experiemental essays
+
+>> flora.py
+Clusters residues from library to create carbon model, then runs minimization.
+Adds pharmaceuticals and performs molecular mechanics simulations, using GROMACS software.
+
+>>gcmc.py
+Uses RASPA 2.0 software to perform Monte Carlo simulations in the Grand Canonical Ensemble.
+inputAds.dat file can be used to perform batch simulations with different concentrations.
+
+>>recover.py
+Searches directories for RASPA 2.0 output files and gathers them in a human-friendly output.
+
+>>toolBox.py
+Data and functions used by several other scripts.
+
+The present scripts may not be up to date. The working directory architecture may require the presence of certain folders and
+files such as the forcefield for GROMACS.
+Any questions or requests can be directed to jose.manuel.pereira@ua.pt
+
+Thank you,
+José Pereira
